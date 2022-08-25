@@ -26,5 +26,12 @@ publishing {
         }
     }
 
-    publications {}
+    publications {
+        '-9.0.0_r8-'(MavenPublication) {
+            groupId = 'com.ilvm.android.framework'
+            artifactId = 'aosp'
+            version = '9.0.0_r8'
+            artifact("./src/android-9.0.0_r8/classes.jar")
+        }
+    }
 }
